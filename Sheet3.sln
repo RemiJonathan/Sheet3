@@ -9,6 +9,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Entities", "Entities\Entiti
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ContactDAL", "ContactDAL\ContactDAL.csproj", "{221BDE07-B362-4599-BF26-91BF462DDBD5}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ContactBLL", "ContactBLL\ContactBLL.csproj", "{61ECB16E-1ABA-4F28-B5F6-B4AC5F8B39B4}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +29,10 @@ Global
 		{221BDE07-B362-4599-BF26-91BF462DDBD5}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{221BDE07-B362-4599-BF26-91BF462DDBD5}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{221BDE07-B362-4599-BF26-91BF462DDBD5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{61ECB16E-1ABA-4F28-B5F6-B4AC5F8B39B4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{61ECB16E-1ABA-4F28-B5F6-B4AC5F8B39B4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{61ECB16E-1ABA-4F28-B5F6-B4AC5F8B39B4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{61ECB16E-1ABA-4F28-B5F6-B4AC5F8B39B4}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
