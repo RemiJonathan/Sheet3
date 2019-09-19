@@ -10,9 +10,10 @@ namespace Sheet3.Models
     public class Model
     {
         private Business bll = new Business();
-        public List<Contact> GetList()
+        public List<Contact> GetAll()
         {
             return bll.GetContacts();
         }
     }
+
 }

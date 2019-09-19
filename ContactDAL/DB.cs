@@ -15,5 +15,7 @@ namespace ContactDAL
         };
 
         public static int LastId = 1;
+
+        
     }
 }

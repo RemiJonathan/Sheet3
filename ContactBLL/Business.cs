@@ -14,5 +14,22 @@ namespace ContactBLL
         {
             return DB.contacts;
         }
+
+        public void Add(Contact c)
+        {
+            c.Id = DB.LastId++;
+            c.IsActive = true;
+
+            DB.contacts.Add(c);
+
+        }
+
+        public Contact Details(int id)
+        {
+            return DB.contacts.Where(x => x.Id == id).Single();
+        }
+
+        
+
     }
 }
