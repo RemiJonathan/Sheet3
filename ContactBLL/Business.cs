@@ -29,7 +29,10 @@ namespace ContactBLL
             return DB.contacts.Where(x => x.Id == id).Single();
         }
 
-        
+        public void Delete(int id){
+            //edit the IsActive value of Contact with same Id
+            
+        }
 
     }
 }
