@@ -21,7 +21,6 @@ namespace ContactBLL
             c.IsActive = true;
 
             DB.contacts.Add(c);
-
         }
 
         public Contact Details(int id)
@@ -31,6 +30,7 @@ namespace ContactBLL
 
         public void Delete(int id){
             //edit the IsActive value of Contact with same Id
+            DB.contacts.Where(x => x.Id == id).Single().IsActive = false;
             
         }
 

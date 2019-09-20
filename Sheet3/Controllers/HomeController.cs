@@ -28,10 +28,6 @@ namespace Sheet3.Controllers
             return View(record);
         }
 
-        //public ActionResult Add(int Id)
-        //{
-
-        //}
         public ActionResult Details(int Id)
         {
             Business bll = new Business();
@@ -56,5 +52,21 @@ namespace Sheet3.Controllers
             return RedirectToAction("Index");
         }
 
+        [HttpGet]
+        public ActionResult Delete(int Id)
+        {
+            Business bll = new Business();
+            var record = bll.Details(Id);
+            
+            return View(record);
+        }
+
+        [HttpPost]
+        public ActionResult Delete(int Id, String token)
+        {
+            Business bll = new Business();
+            bll.Delete(Id);
+            return RedirectToAction("Index");
+        }
     }
 }
